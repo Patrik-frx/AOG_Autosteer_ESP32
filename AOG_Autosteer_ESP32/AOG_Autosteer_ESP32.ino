@@ -80,7 +80,7 @@ struct Storage {
 												  // 1 = Single Mode of ADS1115 - Sensor Signal at A0 (ADS)
 												  // 2 = Differential Mode - Connect Sensor GND to A1, Signal to A0
 
-	uint8_t IMUType = 0;                          // 0: none, 1: BNO055 IMU, 2: CMPS14, 3: BNO080 + BNO085
+	uint8_t IMUType = 3;                          // 0: none, 1: BNO055 IMU, 2: CMPS14, 3: BNO080 + BNO085
 
 	//CMPS14	
 	int CMPS14_ADDRESS = 0x60;                    // Address of CMPS14 shifted right one bit for arduino wire library
