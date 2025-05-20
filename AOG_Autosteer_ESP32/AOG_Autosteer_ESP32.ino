@@ -62,7 +62,7 @@ struct Storage {
 	uint8_t AgIOHeartbeat_answer = 0;			  //0: don't answer (default for WiFi), IP is send in any case	
 	uint8_t aogVersion = 20;			          // Version number not used at the moment
 
-	byte DataTransVia = 7;                        // transfer data via 0 = USB / 7 = WiFi UDP / 10 = Ethernet UDP
+	byte DataTransVia = 0;                        // transfer data via 0 = USB / 7 = WiFi UDP / 10 = Ethernet UDP
 
 	uint8_t output_type = 2;                      // set to 1  if you want to use Stering Motor + Cytron MD30C Driver
 												  // set to 2  if you want to use Stering Motor + IBT 2  Driver
