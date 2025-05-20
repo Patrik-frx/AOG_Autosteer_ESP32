@@ -62,7 +62,7 @@ struct Storage {
 	uint8_t AgIOHeartbeat_answer = 0;			  //0: don't answer (default for WiFi), IP is send in any case	
 	uint8_t aogVersion = 20;			          // Version number not used at the moment
 
-	byte DataTransVia = 7;                        // transfer data via 0 = USB / 7 = WiFi UDP / 10 = Ethernet UDP
+	byte DataTransVia = 0;                        // transfer data via 0 = USB / 7 = WiFi UDP / 10 = Ethernet UDP
 
 	uint8_t output_type = 2;                      // set to 1  if you want to use Stering Motor + Cytron MD30C Driver
 												  // set to 2  if you want to use Stering Motor + IBT 2  Driver
@@ -80,7 +80,7 @@ struct Storage {
 												  // 1 = Single Mode of ADS1115 - Sensor Signal at A0 (ADS)
 												  // 2 = Differential Mode - Connect Sensor GND to A1, Signal to A0
 
-	uint8_t IMUType = 0;                          // 0: none, 1: BNO055 IMU, 2: CMPS14, 3: BNO080 + BNO085
+	uint8_t IMUType = 3;                          // 0: none, 1: BNO055 IMU, 2: CMPS14, 3: BNO080 + BNO085
 
 	//CMPS14	
 	int CMPS14_ADDRESS = 0x60;                    // Address of CMPS14 shifted right one bit for arduino wire library
